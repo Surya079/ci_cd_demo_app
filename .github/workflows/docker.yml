@@ -45,7 +45,7 @@ jobs:
           docker stop spring-boot-ci-demo || true
           docker rm spring-boot-ci-demo || true
           docker pull ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot-ci-demo:latest
-          docker run -d --name spring-boot-ci-demo --p 8080:8080 ${{ secrets.DOCKERHUB_USERNAME }}/}/spring-boot-ci-demo:latest
+          docker run -d --name spring-boot-ci-demo ${{ secrets.DOCKERHUB_USERNAME }}/}/spring-boot-ci-demo:latest
           
           
      
